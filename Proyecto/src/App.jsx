@@ -65,16 +65,16 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style={{ height: "50px" }}>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="800">
-            <img src={cajaIcon} class="d-block w-100" alt="..."/>
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src={cajaIcon} class="d-block w-25 mx-auto" alt="..."/>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src={userIcon} class="d-block w-100" alt="..."/>
+            <img src={userIcon} class="d-block w-25 mx-auto" alt="..."/>
           </div>
-          <div class="carousel-item" data-bs-interval="600">
-            <img src={carroIcon} class="d-block w-100" alt="..."/>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src={carroIcon} class="d-block w-25 mx-auto" alt="..."/>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
