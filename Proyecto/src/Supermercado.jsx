@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import { Link } from 'react-router-dom'
 import canastaIcon from './assets/canasta.png'
 import hornoIcon from './assets/Horno.png'
 import logoIcon from './assets/logo.png'
@@ -10,17 +10,16 @@ import cajaIcon from './assets/caja.png'
 import userIcon from './assets/user.png'
 import carroIcon from './assets/carro.png'
 import PlazaVea_2Icon from './assets/PlazaVea_2.png'
-import shampooIcon from './assets/shampoo.png'
-import productosIcon from './assets/productos.png'
-import productos_2Icon from './assets/productos_2.png'
-import productos_3Icon from './assets/productos_3.png'
+import chelaIcon from './assets/chela.png'
+import miloIcon from './assets/milo.png'
+import limpiezaIcon from './assets/limpieza.png'
 
-function App() {
-  const [count, setCount] = useState(0)
+function Supermercado() {
+    const [count, setCount] = useState(0)
 
-  return (
-    <>
-      {/* Agrega un id al contenedor principal para volver al inicio */}
+    return (
+        <>
+            {/* Agrega un id al contenedor principal para volver al inicio */}
             <div id="top"></div>
 
             {/* Barra de navegación superior */}
@@ -115,13 +114,13 @@ function App() {
             <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active" data-bs-interval="2000">
-                        <img src={shampooIcon} className="d-block p-2 mx-auto" style={{ height: "300px" }} alt="..." />
+                        <img src={chelaIcon} className="d-block p-2 mx-auto" style={{ height: "300px" }} alt="..." />
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
-                        <img src={productosIcon} className="d-block p-2 mx-auto" style={{ height: "300px" }} alt="..." />
+                        <img src={limpiezaIcon} className="d-block p-2 mx-auto" style={{ height: "300px" }} alt="..." />
                     </div>
                     <div className="carousel-item" data-bs-interval="2000">
-                        <img src={productos_2Icon} className="d-block p-2 mx-auto" style={{ height: "300px" }} alt="..." />
+                        <img src={miloIcon} className="d-block p-2 mx-auto" style={{ height: "300px" }} alt="..." />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -144,7 +143,7 @@ function App() {
 
             {/* Sección de productos */}
             <div className='p-2'>
-                <img src={productos_3Icon} alt="#" />
+                <img src={limpiezaIcon} alt="#" />
             </div>
 
             {/* Agrega el botón de "Volver al inicio" */}
@@ -191,9 +190,8 @@ function App() {
                     © 2026 Supermercados Peruanos S.A. Todos los derechos reservados.
                 </div>
             </footer>
-    </>
-  )
-
+        </>
+    )
 }
 
-export default App
+export default Supermercado
